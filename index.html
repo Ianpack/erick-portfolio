@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./assets/favicon.png" type="image/png">
+<title>Erick Maina</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./assets/about-image.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Hello I'm Erick Maina</b></h1>
+    <p>an experienced Electrician with a passion for delivering high-quality electrical services.</p>
+    <img src="./assets/about-image.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="./assets/about-image.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top" onclick="closeNav()">
+        <a href="#contact" style="text-decoration: none; color: inherit;"> Hire me.</a>
+    </button>
+    
+  </header>
+
+  <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="w3-opacity">
+            <p>
+                I am a dedicated and skilled electrician with over 5 years of
+                experience, specializing in ensuring safe and efficient electrical
+                systems for both residential and commercial projects. My commitment
+                to quality workmanship and adherence to industry regulations have
+                earned me a reputation for delivering exceptional results. I thrive
+                in dynamic environments, where problem-solving and innovation are
+                valued, and I approach every challenge with enthusiasm and
+                determination. Communication and collaboration are integral to my
+                work ethos, and I strive to exceed expectations by fostering
+                positive relationships with clients and colleagues.
+            </p>
+            <p>
+                Outside of work, I am an avid adventurer and outdoor enthusiast,
+                enjoying activities such as hiking, adventure sports, and swimming.
+                Looking ahead, I aim to continue growing in my career, staying
+                updated on the latest advancements in electrical technology, and
+                aspiring to take on leadership roles where I can mentor and inspire
+                others in the field. Ultimately, my goal is to make a meaningful
+                impact and leave a lasting legacy in the electrical engineering
+                industry.
+            </p>
+
+
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+            <a href="./assets/resume.pdf" download style="text-decoration: none; color: inherit;"><i class="fa fa-download"></i> Download CV</a>
+        </button>
+    <!-- End About Section -->
+    </div>
+
+
+    <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Portfolio</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="./assets/1.jpg" style="width:100%">
+        <img src="./assets/2.jpg" style="width:100%">
+        <img src="./assets/3.jpg" style="width:100%">
+        <img src="./assets/4.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="./assets/5.jpg" style="width:100%">
+        <img src="./assets/6.jpg" style="width:100%">
+        <img src="./assets/7.jpg" style="width:100%">
+        <img src="./assets/8.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/9.jpg" style="width:100%">
+        <img src="./assets/10.jpg" style="width:100%">
+        <img src="./assets/11.jpg" style="width:100%">
+        <img src="./assets/12.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/13.jpg" style="width:100%">
+        <img src="./assets/14.jpg" style="width:100%">
+        <img src="./assets/15.jpg" style="width:100%">
+        <img src="./assets/16.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/17.jpg" style="width:100%">
+        <img src="./assets/18.jpg" style="width:100%">
+        <img src="./assets/19.jpg" style="width:100%">
+        <img src="./assets/20.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/21.jpg" style="width:100%">
+        <img src="./assets/22.jpg" style="width:100%">
+        <img src="./assets/23.jpg" style="width:100%">
+        <img src="./assets/24.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/25.jpg" style="width:100%">
+        <img src="./assets/26.jpg" style="width:100%">
+        <img src="./assets/27.jpg" style="width:100%">
+        <img src="./assets/28.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/29.jpg" style="width:100%">
+        <img src="./assets/30.jpg" style="width:100%">
+        <img src="./assets/31.jpg" style="width:100%">
+        <img src="./assets/32.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/33.jpg" style="width:100%">
+        <img src="./assets/34.jpg" style="width:100%">
+        <img src="./assets/35.jpg" style="width:100%">
+        <img src="./assets/36.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/37.jpg" style="width:100%">
+        <img src="./assets/38.jpg" style="width:100%">
+        <img src="./assets/39.jpg" style="width:100%">
+        <img src="./assets/40.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/41.jpg" style="width:100%">
+        <img src="./assets/42.jpg" style="width:100%">
+        <img src="./assets/43.jpg" style="width:100%">
+        <img src="./assets/44.jpg" style="width:100%">
+      </div>
+
+      <div>
+        <img src="./assets/45.jpg" style="width:100%">
+        <img src="./assets/46.jpg" style="width:100%">
+        <img src="./assets/47.jpg" style="width:100%">
+        <img src="./assets/48.jpg" style="width:100%">
+      </div>
+      
+      <div>
+        <img src="./assets/49.jpg" style="width:100%">
+      </div>
+
+
+
+      
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Nanyuki, Kenya</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: <a href="tel:+254719480702">+254719480702</a></p>
+      <p><i class="fa fa-whatsapp fa-fw w3-xxlarge w3-margin-right"></i> WhatsApp: <a href="https://wa.me/254719480702">+254719480702</a></p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:erickmaina30@gmail.com">erickmaina30@gmail.com</a></p>
+    </div>
+
+    <div class="w3-container w3-padding-32" id="contact">
+</div>
+
+
+
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <p>&copy; 2024 Erick Maina. All Rights Reserved.</p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
